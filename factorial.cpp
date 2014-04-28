@@ -20,7 +20,6 @@ int main(void) {
     cin >> m;
     n = 1;
     o = m;
-    cout << n << " " << m << endl;
     factorial(&n,&m); //passing addresses
     cout << o << "! = " << n << endl;
   }
