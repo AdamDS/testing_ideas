@@ -8,15 +8,11 @@ char check_case(char);
 void clean_word(string*);
 
 int main() {
-  /*string str_filename;
+  string str_filename;
+  ifstream file_in;
   cout << "Enter the filename to read. ";
   cin >> str_filename;
-  //convert string to char array, needed for ifstream open
-  char ch_filename[str_filename.size()];
-  for (int i=0; i<str_filename.size(); i++) ch_filename[i] = str_filename[i];
-  cout << "Trying file " << ch_filename << endl;
-  ifstream file_in(ch_filename);*/
-  ifstream file_in("test_read.in");  
+  file_in.open(str_filename.c_str()); //default file test_read.in
   
   if (file_in==NULL)  {
     perror ("Error opening file");
